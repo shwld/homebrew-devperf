@@ -8,17 +8,17 @@ class Devperf < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/shwld/devops-metrics-tools/releases/download/v0.0.7/devops-metrics-tools-v0.0.7-aarch64-apple-darwin.tar.xz"
-      sha256 "36550f4917bbdad0a802f66c042af2405bcd8ee529702656179235c84011f310"
+      url "https://github.com/shwld/devops-metrics-tools/releases/download/v0.0.8/devops-metrics-tools-v0.0.8-aarch64-apple-darwin.tar.xz"
+      sha256 "87c004c72338dbd7e9ec12a23161a0f7d26baa1f3b893c71d4f38e9a0d1bb5b0"
     elsif Hardware::CPU.intel?
-      url "https://github.com/shwld/devops-metrics-tools/releases/download/v0.0.7/devops-metrics-tools-v0.0.7-x86_64-apple-darwin.tar.xz"
-      sha256 "003ef3b85b135cb1b55916c5275eb3be8964122b35d41f650d8906d4d2ed8b45"
+      url "https://github.com/shwld/devops-metrics-tools/releases/download/v0.0.8/devops-metrics-tools-v0.0.8-x86_64-apple-darwin.tar.xz"
+      sha256 "315d64f05f21ab67e0d59143a596750af19fae901878315b8fbcd1e5a9833154"
     end
   end
 
   on_linux do
-    url "https://github.com/shwld/devops-metrics-tools/releases/download/v0.0.7/devops-metrics-tools-v0.0.7-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "18e2eabdf5689e892d1d55dcbeb318f298c3a912a26cba5b20403c961a665008"
+    url "https://github.com/shwld/devops-metrics-tools/releases/download/v0.0.8/devops-metrics-tools-v0.0.8-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "c828c8c40bc6eab81423cfb832c16c54af6a7be7fc994db315990d081315ba5d"
   end
 
   def install
