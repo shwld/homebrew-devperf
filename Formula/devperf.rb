@@ -6,19 +6,21 @@ class Devperf < Formula
   homepage "https://github.com/shwld/devops-metrics-tools"
   license "MIT"
 
+  depends_on "gcc" => :build unless OS.mac?
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/shwld/devops-metrics-tools/releases/download/v0.0.9/devops-metrics-tools-v0.0.9-aarch64-apple-darwin.tar.xz"
-      sha256 "87c004c72338dbd7e9ec12a23161a0f7d26baa1f3b893c71d4f38e9a0d1bb5b0"
+      sha256 "27748ba7daa7be6e942c8d6f390a8697e4b8037321507384d980441d2ed218fc"
     elsif Hardware::CPU.intel?
       url "https://github.com/shwld/devops-metrics-tools/releases/download/v0.0.9/devops-metrics-tools-v0.0.9-x86_64-apple-darwin.tar.xz"
-      sha256 "315d64f05f21ab67e0d59143a596750af19fae901878315b8fbcd1e5a9833154"
+      sha256 "8246d032ef9b2b9c23880f0a21b3bd9b4fa1df9f40c0c9f63c7f81a5e8cc5e83"
     end
   end
 
   on_linux do
     url "https://github.com/shwld/devops-metrics-tools/releases/download/v0.0.9/devops-metrics-tools-v0.0.9-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "c828c8c40bc6eab81423cfb832c16c54af6a7be7fc994db315990d081315ba5d"
+    sha256 "9e16c7a21681815721f335bea69638d763d194c48071619d265b6190ddda1e86"
   end
 
   def install
